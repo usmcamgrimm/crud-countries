@@ -1,0 +1,22 @@
+body {
+  background-color: #d1d8e0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size : 12px;
+   display:flex;
+   padding: 10%;
+}
+
+p#counter {
+  font-size: 3em;
+  color: blue;
+}
+
+input[type='submit'],
+button,
+[aria-label] {
+  cursor: pointer;
+}
+
+#spoiler {
+  display: none;
+}
