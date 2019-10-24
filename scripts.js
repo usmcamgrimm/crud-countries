@@ -2,8 +2,7 @@ var app = new function () {
 
   this.element = document.getElementById('countries');
 
-  this.countries = ['France', 'Germany', 'England', 'Spain', 'Belgium', 'Italy', 'Portugal', 'Irland',
-    'Luxembourg', 'Iraq', 'China', 'Thailand', 'Greece'
+  this.countries = ['France', 'Germany', 'England', 'Spain', 'Belgium', 'Italy', 'Portugal', 'Irland', 'Luxembourg', 'Iraq', 'China', 'Thailand', 'Greece'
   ];
 
   this.Count = function (data) {

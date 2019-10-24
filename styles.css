@@ -9,6 +9,9 @@ body {
 p#counter {
   font-size: 3em;
   color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 input[type='submit'],
