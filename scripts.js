@@ -41,7 +41,7 @@ var app = new function () {
     // Get the value
     let country = element.value;
 
-    if (country && !countries.contains(country)) {
+    if (country/* && !countries.contains(country)*/) {
       // Add the new value
       this.countries.push(country.trim());
       // Reset input value

@@ -5,23 +5,28 @@
   <meta charset="UTF-8">
   <title>Countries CRUD</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Red+Hat+Display&display=swap" rel="stylesheet">
 </head>
 <body>
+
   <!-- TODO Move this to top, center, make larger, add hover over buttons-->
   <div class="countryContainer">
     <form id="newCountry" action="javascript:void(0);" method="POST" onsubmit="app.Add()">
       <input type="text" id="add-name" placeholder="New country">
-      <input type="submit" value="Add">
+      <input type="submit" value="Add" class="addEditBtn">
     </form>
+
     <div id="spoiler" role="aria-hidden">
       <form action="javascript:void(0);" method="POST" id="saveEdit">
         <input type="text" id="edit-name">
-        <input type="submit" value="Edit" /> <a onclick="CloseInput()" aria-label="Close">&#10006;</a>
+        <input type="submit" value="Edit" class="addEditBtn" /> <a onclick="CloseInput()" aria-label="Close">&#10006;</a>
       </form>
     </div>
-      <!-- Center Text Add Hover-->
+
+    <!-- Center Text Add Hover-->
     <p id="counter"></p>
-        <!-- Change styles for Centering UI ; Make modern-->
+
+    <!-- Change styles for Centering UI ; Make modern-->
     <table>
       <tr>
         <th>Name</th>
@@ -30,6 +35,8 @@
       </tbody>
     </table>
   </div>
+
 <script src="scripts.js"></script>
+
 </body>
 </html>
