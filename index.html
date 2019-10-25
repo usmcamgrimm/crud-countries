@@ -19,7 +19,7 @@
     <div id="spoiler" role="aria-hidden">
       <form action="javascript:void(0);" method="POST" id="saveEdit">
         <input type="text" id="edit-name">
-        <input type="submit" value="Edit" class="addEditBtn" /> <a onclick="CloseInput()" aria-label="Close">&#10006;</a>
+        <input type="submit" value="Edit" class="addEditBtn" /> <a onclick="CloseInput()" aria-label="Close"></a>
       </form>
     </div>
 
@@ -27,13 +27,10 @@
     <p id="counter"></p>
 
     <!-- Change styles for Centering UI ; Make modern-->
-    <table>
-      <tr>
-        <th>Name</th>
-      </tr>
-      <tbody id="countries">
-      </tbody>
-    </table>
+    <div class="name">Name</div>
+    <div class="country">
+      <div id="countries"></div>
+    </div>
   </div>
 
 <script src="scripts.js"></script>

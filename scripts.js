@@ -24,11 +24,11 @@ var app = new function () {
 
     if (this.countries.length > 0) {
       for (iterator = 0; iterator < this.countries.length; iterator++) {
-        data += '<tr>';
-        data += '<td>' + this.countries[iterator] + '</td>';
-        data += '<td><button onclick="app.Edit(' + iterator + ')">Edit</button></td>';
-        data += '<td><button onclick="app.Delete(' + iterator + ')">Delete</button></td>';
-        data += '</tr>';
+        data += '<div class="country">';
+        data += '<div class="countryName">' + this.countries[iterator] + '</div>';
+        data += '<div class="editBtn"><button onclick="app.Edit(' + iterator + ')"></button></div>';
+        data += '<div class="deleteBtn"><button onclick="app.Delete(' + iterator + ')"></button></div>';
+        data += '</div>';
       }
     }
 
