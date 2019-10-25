@@ -1,3 +1,6 @@
+html, body {
+  box-sizing: border-box;
+}
 body {
   background-color: #424243;
   font-family: 'Red Hat Display', Arial, sans-serif;
@@ -5,13 +8,11 @@ body {
   display:flex;
   padding: 10%;
 }
-
 input[type='submit'],
 button,
 [aria-label] {
   cursor: pointer;
 }
-
 #spoiler {
   display: none;
 }
@@ -19,7 +20,6 @@ button,
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  align-items: space-around;;
 }
 #add-name {
   text-align: left;
@@ -39,7 +39,7 @@ button,
   color: #030303;
   margin-left: 10px;
   font-size: 1.2em;
-  padding: 10px;;
+  padding: 10px;
   width: 45px;
   height: 45px;
   border-radius: 50px;
@@ -57,20 +57,38 @@ p#counter {
   text-shadow: 0px 1px 2px #030303;
   text-align: center;
 }
-.name {
+.nameList {
   color: #fefefe;
-  font-size: 1.2em;
+  font-size: 2em;
   text-align: center;
+  text-decoration: underline;
+  text-shadow: 0px 1px 2px #030303;
+  margin-bottom: 2em;
 }
 .country {
   display: grid;
+  justify-items: end;
   grid-template-columns: repeat(3, auto);
-  grid-gap: 5px;
+  grid-gap: 1em;
 }
 .countryName {
   color: #fefefe;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 .editBtn, .deleteBtn {
-  text-align: right;
+  background-color: #4384f2;
+  color: #030303;
+  margin-left: 20px;
+  font-size: 12px;
+  width: 45px;
+  height: 25px;
+  border-radius: 6px;
+  border: none;
+  box-shadow: 0px 1px 4px #030303;
+  margin: 0px 10px 10px 0px;
+}
+.editBtn:hover, .deleteBtn:hover {
+  box-shadow: 0px 4px 12px #030303;
+  transform: scale(1.10);
+  color: #fefefe;
 }

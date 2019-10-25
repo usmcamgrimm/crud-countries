@@ -26,8 +26,8 @@ var app = new function () {
       for (iterator = 0; iterator < this.countries.length; iterator++) {
         data += '<div class="country">';
         data += '<div class="countryName">' + this.countries[iterator] + '</div>';
-        data += '<div class="editBtn"><button onclick="app.Edit(' + iterator + ')"></button></div>';
-        data += '<div class="deleteBtn"><button onclick="app.Delete(' + iterator + ')"></button></div>';
+        data += '<input type="button" class="editBtn" value="Edit" onclick="app.Edit(' + iterator + ')"></input>';
+        data += '<input type="button" class="deleteBtn" value="Delete" onclick="app.Delete(' + iterator + ')"></input>';
         data += '</div>';
       }
     }
