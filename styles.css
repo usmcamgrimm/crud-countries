@@ -61,7 +61,7 @@ p#counter {
   text-shadow: 0px 1px 2px #030303;
   text-align: center;
 }
-.nameList {
+#nameList {
   color: #fefefe;
   font-size: 2em;
   text-align: center;
@@ -78,6 +78,7 @@ p#counter {
 .countryName {
   color: #fefefe;
   font-size: 1.5em;
+  text-transform: capitalize;
 }
 .editBtn, .deleteBtn {
   background-color: #4385f2;

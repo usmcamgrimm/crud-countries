@@ -14,18 +14,27 @@ var app = new function () {
   this.Count = function (data) {
     let element = document.getElementById('counter');
     let name = 'country';
+    let titleElement = document.getElementById('nameList');
+    let title = 'Name';
 
     if (data) {
       if (data > 1) {
         name = 'countries';
+        title = 'Country Name';
       }
       element.innerHTML = data + ' ' + name;
+      titleElement.innerHTML = title;
     } else {
       element.innerHTML = 'No ' + name;
+      // Use prepend() to change nameList if no data present
+      let parent = document.getElementById('nameList');
+      parent.append(" of Countries");
+      parent.prepend("Unable to List the ");
     }
   };
 
   this.FetchAll = function () {
+    this.countries.sort();
     let data = '';
 
     if (this.countries.length > 0) {
@@ -47,12 +56,12 @@ var app = new function () {
     // Get the value
     let country = element.value;
 
-    if (country/* && !countries.contains(country)*/) {
+    if (country && !this.countries.includes(country)) {
       // Add the new value
       this.countries.push(country.trim());
       // Reset input value
       element.value = '';
-      // Dislay the new list
+      // Display the new list
       this.FetchAll();
     }
   };
