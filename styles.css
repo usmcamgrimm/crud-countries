@@ -1,12 +1,12 @@
-html, body {
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 body {
-  background-color: #424243;
+  background-color: #303030;
   font-family: 'Red Hat Display', Arial, sans-serif;
   font-size : 12px;
-  display:flex;
-  padding: 10%;
 }
 input[type='submit'],
 button,
@@ -18,8 +18,11 @@ button,
 }
 .countryContainer {
   display: flex;
-  justify-content: flex-start;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
 }
 #add-name {
   text-align: left;
@@ -35,7 +38,7 @@ button,
   margin-top: 10px;
 }
 .addEditBtn {
-  background-color: #4384f2;
+  background-color: #4385f2;
   color: #030303;
   margin-left: 10px;
   font-size: 1.2em;
@@ -47,12 +50,13 @@ button,
   box-shadow: 0px 1px 4px #030303;
 }
 .addEditBtn:hover {
+  color: #fefefe;
   box-shadow: 0px 4px 12px #030303;
   transform: scale(1.10);
 }
 p#counter {
   font-size: 3em;
-  color: #4384f2;
+  color: #4385f2;
   font-size: 3em;
   text-shadow: 0px 1px 2px #030303;
   text-align: center;
@@ -63,32 +67,29 @@ p#counter {
   text-align: center;
   text-decoration: underline;
   text-shadow: 0px 1px 2px #030303;
-  margin-bottom: 2em;
+  margin-bottom: 10px;
 }
-.country {
+.countryRow {
   display: grid;
-  justify-items: end;
-  grid-template-columns: repeat(3, auto);
-  grid-gap: 1em;
+  grid-template-columns: 3fr 1fr 1fr;
+  grid-gap: 10px;
+  margin-bottom: 10px;
 }
 .countryName {
   color: #fefefe;
   font-size: 1.5em;
 }
 .editBtn, .deleteBtn {
-  background-color: #4384f2;
+  background-color: #4385f2;
   color: #030303;
-  margin-left: 20px;
   font-size: 12px;
   width: 45px;
   height: 25px;
   border-radius: 6px;
   border: none;
-  box-shadow: 0px 1px 4px #030303;
-  margin: 0px 10px 10px 0px;
 }
 .editBtn:hover, .deleteBtn:hover {
-  box-shadow: 0px 4px 12px #030303;
+  box-shadow: 0px 2px 12px #030303;
   transform: scale(1.10);
   color: #fefefe;
 }

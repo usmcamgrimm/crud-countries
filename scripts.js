@@ -2,8 +2,14 @@ var app = new function () {
 
   this.element = document.getElementById('countries');
 
-  this.countries = ['France', 'Germany', 'England', 'Spain', 'Belgium', 'Italy', 'Portugal', 'Irland', 'Luxembourg', 'Iraq', 'China', 'Thailand', 'Greece'
-  ];
+  this.countries = ['Norway',
+                    'Sweden',
+                    'Denmark',
+                    'Scotland',
+                    'Ireland',
+                    'England',
+                    'Iceland',
+                    'Germany',]
 
   this.Count = function (data) {
     let element = document.getElementById('counter');
@@ -24,7 +30,7 @@ var app = new function () {
 
     if (this.countries.length > 0) {
       for (iterator = 0; iterator < this.countries.length; iterator++) {
-        data += '<div class="country">';
+        data += '<div class="countryRow">';
         data += '<div class="countryName">' + this.countries[iterator] + '</div>';
         data += '<input type="button" class="editBtn" value="Edit" onclick="app.Edit(' + iterator + ')"></input>';
         data += '<input type="button" class="deleteBtn" value="Delete" onclick="app.Delete(' + iterator + ')"></input>';
